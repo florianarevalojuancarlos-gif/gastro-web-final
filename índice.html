@@ -1,142 +1,61 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GastroBalance | Bienestar Digestivo Premium</title>
+    <title>GastroBalance | Premium</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #FBFBF9; color: #1D1D1F; }
-        .font-serif { font-family: 'Playfair Display', serif; }
-        .bg-cream { background-color: #FBFBF9; }
-        .text-sage { color: #4A6741; }
-        .bg-sage { background-color: #4A6741; }
-        .border-gold { border-color: #C5A059; }
-        .fade-in { animation: fadeIn 1.5s ease-out; }
+        body { font-family: 'Inter', sans-serif; background-color: #FBFBF9; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .fade-in { animation: fadeIn 1.2s ease-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
 <body>
-
-    <!-- NAVBAR -->
-    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 py-4 px-8">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="text-2xl font-serif font-bold text-sage flex items-center gap-2">
-                <i data-lucide="leaf"></i> GastroBalance
-            </div>
-            <div class="hidden md:flex gap-8 text-xs font-bold tracking-widest text-gray-400">
-                <a href="#beneficios" class="hover:text-sage transition-colors">BENEFICIOS</a>
-                <a href="#ingredientes" class="hover:text-sage transition-colors">CIENCIA</a>
-                <a href="#productos" class="hover:text-sage transition-colors">PRODUCTOS</a>
-            </div>
-            <button class="bg-sage text-white px-6 py-2 rounded-full text-xs font-bold hover:shadow-lg transition-all">
-                COMPRAR
-            </button>
-        </div>
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 py-4 px-8 flex justify-between items-center">
+        <div class="text-2xl serif font-bold text-[#4A6741] flex items-center gap-2"><i data-lucide="leaf"></i> GastroBalance</div>
+        <button class="bg-[#4A6741] text-white px-6 py-2 rounded-full text-xs font-bold">COMPRAR</button>
     </nav>
 
-    <!-- HERO -->
-    <section class="pt-40 pb-20 px-8 fade-in">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-                <span class="text-[#C5A059] font-bold tracking-widest text-xs uppercase mb-4 block">Nutrición Funcional Premium</span>
-                <h1 class="text-6xl lg:text-8xl font-serif leading-tight mb-8">
-                    Tu alivio <br> en un <span class="italic text-sage">bocado.</span>
-                </h1>
-                <p class="text-xl text-gray-500 mb-10 max-w-md leading-relaxed">
-                    Galletas artesanales creadas para abrazar tu sistema digestivo con ingredientes 100% naturales.
-                </p>
-                <div class="flex gap-4">
-                    <a href="#productos" class="bg-black text-white px-10 py-5 rounded-full flex items-center gap-3 hover:bg-sage transition-all shadow-xl">
-                        Probar Ahora <i data-lucide="arrow-right"></i>
-                    </a>
-                </div>
+    <section class="pt-48 pb-20 px-8 max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center fade-in">
+        <div>
+            <span class="text-[#C5A059] font-bold tracking-widest text-xs uppercase mb-4 block">Salud Funcional</span>
+            <h1 class="text-6xl lg:text-8xl serif leading-tight mb-8 text-[#1D1D1F]">Tu alivio <br> natural.</h1>
+            <p class="text-lg text-gray-500 mb-10 leading-relaxed">Galletas artesanales creadas para proteger tu sistema digestivo con ingredientes 100% orgánicos.</p>
+            <button class="bg-black text-white px-10 py-5 rounded-full font-bold shadow-2xl hover:bg-[#4A6741] transition-all">PROBAR AHORA</button>
+        </div>
+        <div class="relative">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=1000" class="rounded-[3rem] shadow-2xl">
+        </div>
+    </section>
+
+    <section class="py-24 bg-white px-8">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
+            <div class="text-center p-8 bg-[#FBFBF9] rounded-[2rem]">
+                <i data-lucide="shield-check" class="mx-auto mb-6 text-[#4A6741]" size="40"></i>
+                <h3 class="serif text-xl mb-4">Escudo Gástrico</h3>
+                <p class="text-gray-500 text-sm">Protege tu mucosa de forma natural.</p>
             </div>
-            <div class="relative">
-                <div class="absolute -z-10 inset-0 bg-sage/10 blur-[100px] rounded-full"></div>
-                <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=1000" alt="Galletas Premium" class="rounded-[3rem] shadow-2xl transform hover:rotate-2 transition-transform duration-700">
+            <div class="text-center p-8 bg-[#FBFBF9] rounded-[2rem]">
+                <i data-lucide="droplets" class="mx-auto mb-6 text-[#4A6741]" size="40"></i>
+                <h3 class="serif text-xl mb-4">Súper Fibras</h3>
+                <p class="text-gray-500 text-sm">Linaza y chía de la mejor calidad.</p>
+            </div>
+            <div class="text-center p-8 bg-[#FBFBF9] rounded-[2rem]">
+                <i data-lucide="sparkles" class="mx-auto mb-6 text-[#4A6741]" size="40"></i>
+                <h3 class="serif text-xl mb-4">Cero Irritantes</h3>
+                <p class="text-gray-500 text-sm">Sin conservantes ni químicos.</p>
             </div>
         </div>
     </section>
 
-    <!-- TRUST BADGES -->
-    <div class="py-12 bg-white border-y border-gray-50">
-        <div class="max-w-7xl mx-auto px-8 flex flex-wrap justify-center gap-12 md:gap-24 opacity-40 grayscale">
-            <span class="font-bold tracking-tighter text-xl italic">100% Natural</span>
-            <span class="font-bold tracking-tighter text-xl italic">Sin Conservantes</span>
-            <span class="font-bold tracking-tighter text-xl italic">Artesanal</span>
-            <span class="font-bold tracking-tighter text-xl italic">Calidad Premium</span>
-        </div>
-    </div>
-
-    <!-- BENEFICIOS -->
-    <section id="beneficios" class="py-32 px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl font-serif mb-4">Diseñadas para tu Bienestar</h2>
-                <p class="text-gray-500 italic">Ciencia aplicada a la repostería funcional.</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="bg-white p-10 rounded-[2.5rem] border border-gray-100 hover:shadow-2xl transition-all">
-                    <div class="text-sage mb-6"><i data-lucide="shield-check" size="40"></i></div>
-                    <h3 class="text-xl font-serif mb-4">Escudo Gástrico</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">Nuestra mezcla de fibras forma una película protectora natural en tu mucosa.</p>
-                </div>
-                <div class="bg-white p-10 rounded-[2.5rem] border border-gray-100 hover:shadow-2xl transition-all">
-                    <div class="text-sage mb-6"><i data-lucide="droplets" size="40"></i></div>
-                    <h3 class="text-xl font-serif mb-4">Digestión Ligera</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">Ingredientes de fácil absorción que evitan la inflamación y la pesadez.</p>
-                </div>
-                <div class="bg-white p-10 rounded-[2.5rem] border border-gray-100 hover:shadow-2xl transition-all">
-                    <div class="text-sage mb-6"><i data-lucide="sparkles" size="40"></i></div>
-                    <h3 class="text-xl font-serif mb-4">Energía Vital</h3>
-                    <p class="text-gray-500 text-sm leading-relaxed">Superalimentos que nutren tu cuerpo sin comprometer tu digestión.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRODUCTOS -->
-    <section id="productos" class="py-32 px-8 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="bg-cream rounded-[4rem] p-4">
-                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=1000" alt="Pack" class="rounded-[3.5rem] w-full shadow-lg">
-                </div>
-                <div>
-                    <h2 class="text-5xl font-serif mb-6">Pack Alivio Ancestral</h2>
-                    <p class="text-xl text-gray-500 mb-8 italic">Avena, Linaza, Chía y un toque de Miel pura.</p>
-                    <ul class="space-y-4 mb-10 text-gray-600">
-                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-sage"></i> 12 Galletas envueltas individualmente</li>
-                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-sage"></i> Envase ecológico compostable</li>
-                        <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="text-sage"></i> Receta avalada por especialistas</li>
-                    </ul>
-                    <div class="flex items-center gap-8">
-                        <span class="text-4xl font-serif font-bold">$24.00</span>
-                        <button class="bg-sage text-white px-10 py-5 rounded-full font-bold hover:scale-105 transition-all shadow-xl">
-                            AÑADIR AL CARRITO
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="py-20 bg-gray-50 border-t border-gray-100 px-8">
-        <div class="max-w-7xl mx-auto text-center">
-            <div class="text-3xl font-serif font-bold text-sage mb-8 italic flex justify-center items-center gap-2">
-                <i data-lucide="leaf"></i> GastroBalance
-            </div>
-            <p class="text-gray-400 text-xs tracking-[0.3em] uppercase">Bienestar digestivo • 2024 • Clase Mundial</p>
-        </div>
+    <footer class="py-20 text-center text-gray-400 text-[10px] tracking-widest uppercase border-t border-gray-100">
+        © 2024 GastroBalance • El Arte del Bienestar
     </footer>
 
-    <script>
-        // Inicializar iconos
-        lucide.createIcons();
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>
